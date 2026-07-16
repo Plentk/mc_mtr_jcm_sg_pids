@@ -1,0 +1,39 @@
+{
+  "pids_images": [
+    {
+      "id": "sg_ccl_2026_pids",
+      "name": "SG CCL 2026 PIDs",
+      "scriptFiles": ["jsblock:scripts/sg_ccl_2026_pids.js"]
+    },
+    {
+      "id": "sg_ccl_2026_pids_arr",
+      "name": "SG CCL 2026 PIDs (Arrival Screen)",
+      "scriptFiles": ["jsblock:scripts/sg_ccl_2026_pids_arr.js"]
+    },
+    {
+      "id": "sg_ccl_2026_pids_idle",
+      "name": "SG CCL 2026 PIDs (Idle Screen)",
+      "scriptFiles": ["jsblock:scripts/sg_ccl_2026_pids_idle.js"]
+    },
+    {
+      "id": "sg_tel_pids",
+      "name": "SG TEL PIDs",
+      "scriptFiles": ["jsblock:scripts/sg_tel_pids.js"]
+    },
+    {
+      "id": "sg_tel_pids_arr",
+      "name": "SG TEL PIDs (Arrival Screen)",
+      "scriptFiles": ["jsblock:scripts/sg_tel_pids_arr.js"]
+    },
+    {
+      "id": "sg_tel_pids_idle",
+      "name": "SG TEL PIDs (Idle Screen)",
+      "scriptFiles": ["jsblock:scripts/sg_tel_pids_idle.js"]
+    },
+    {
+      "id": "sg_tel_pids_closed",
+      "name": "SG TEL PIDs (Platform Closed)",
+      "scriptFiles": ["jsblock:scripts/sg_tel_pids_closed.js"]
+    }
+  ]
+}

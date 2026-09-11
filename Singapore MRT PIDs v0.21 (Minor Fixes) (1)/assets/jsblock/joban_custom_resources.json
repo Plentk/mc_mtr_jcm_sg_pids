@@ -1,39 +1,88 @@
 {
   "pids_images": [
     {
-      "id": "sg_ccl_2026_pids",
-      "name": "SG CCL 2026 PIDs",
-      "scriptFiles": ["jsblock:scripts/sg_ccl_2026_pids.js"]
+      "id": "sg_nel_pids",
+      "name": "SG NEL PIDs [Singapore North East Line Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_nel_pids.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
     },
     {
-      "id": "sg_ccl_2026_pids_arr",
-      "name": "SG CCL 2026 PIDs (Arrival Screen)",
-      "scriptFiles": ["jsblock:scripts/sg_ccl_2026_pids_arr.js"]
+      "id": "sg_ccl_2009_pids",
+      "name": "SG CCL 2009 PIDs [Singapore Circle Line 2009 Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_ccl_2009_pids.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
     },
     {
-      "id": "sg_ccl_2026_pids_idle",
-      "name": "SG CCL 2026 PIDs (Idle Screen)",
-      "scriptFiles": ["jsblock:scripts/sg_ccl_2026_pids_idle.js"]
+      "id": "sg_ccl_2009_pids_arr",
+      "name": "SG CCL 2009 PIDs (Arrival Screen) [Singapore Circle Line 2009 Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_ccl_2009_pids_arr.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
+    },
+    {
+      "id": "sg_ccl_2009_pids_idle",
+      "name": "SG CCL 2009 PIDs (Idle Screen) [Singapore Circle Line 2009 Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_ccl_2009_pids_idle.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
+    },
+    {
+      "id": "sg_ccl_2026_pids_beta",
+      "name": "SG CCL 2026 PIDs Proposed [Singapore Circle Line 2026 Proposed Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_ccl_2026_pids_beta.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
+    },
+    {
+      "id": "sg_ccl_2026_pids_arr_beta",
+      "name": "SG CCL 2026 PIDs Proposed (Arrival Screen) [Singapore Circle Line 2026 Proposed Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_ccl_2026_pids_arr_beta.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
+    },
+    {
+      "id": "sg_ccl_2026_pids_idle_beta",
+      "name": "SG CCL 2026 PIDs (Idle Screen) [Singapore Circle Line 2026 Proposed Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_ccl_2026_pids_idle_beta.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
+    },
+    {
+      "id": "sg_dtl_pids_2013",
+      "name": "SG DTL PIDs [Singapore Downtown Line 2026 Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_dtl_2013_pids.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
+    },
+    {
+      "id": "sg_dtl_pids_2013_idle",
+      "name": "SG DTL PIDs (Idle Screen) [Singapore Downtown Line 2026 Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_dtl_2013_pids_idle.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
+    },
+    {
+      "id": "sg_dtl_pids_2013_arr",
+      "name": "SG DTL PIDs (Arrival Screen) [Singapore Downtown Line 2026 Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_dtl_2013_pids_arr.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
     },
     {
       "id": "sg_tel_pids",
-      "name": "SG TEL PIDs",
-      "scriptFiles": ["jsblock:scripts/sg_tel_pids.js"]
+      "name": "SG TEL PIDs [Singapore Thomson-East Coast Line 2026 Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_tel_pids.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
     },
     {
       "id": "sg_tel_pids_arr",
-      "name": "SG TEL PIDs (Arrival Screen)",
-      "scriptFiles": ["jsblock:scripts/sg_tel_pids_arr.js"]
+      "name": "SG TEL PIDs (Arrival Screen) [Singapore Thomson-East Coast Line 2026 Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_tel_pids_arr.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
     },
     {
       "id": "sg_tel_pids_idle",
-      "name": "SG TEL PIDs (Idle Screen)",
-      "scriptFiles": ["jsblock:scripts/sg_tel_pids_idle.js"]
+      "name": "SG TEL PIDs (Idle Screen) [Singapore Thomson-East Coast Line 2026 Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_tel_pids_idle.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
     },
     {
       "id": "sg_tel_pids_closed",
-      "name": "SG TEL PIDs (Platform Closed)",
-      "scriptFiles": ["jsblock:scripts/sg_tel_pids_closed.js"]
+      "name": "SG TEL PIDs (Platform Closed) [Singapore Thomson-East Coast Line 2026 Passenger Information Display]",
+      "scriptFiles": ["jsblock:scripts/sg_tel_pids_closed.js"],
+      "blacklist": ["pids_1a","lcd_pids"]
     }
   ]
 }

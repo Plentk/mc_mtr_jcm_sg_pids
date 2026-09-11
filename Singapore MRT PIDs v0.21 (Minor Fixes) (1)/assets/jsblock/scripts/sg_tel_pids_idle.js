@@ -67,7 +67,7 @@ function render(ctx, state, pids) {
     .text(TextUtil.cycleString(customMsg))
     .color(0xFFFFFF)
     .pos(30, 3.5)
-    .size((2 * pids.width) - 100, 7.5)
+    .size((2 * pids.width) - 100, 10)
     .marquee()
     .scale(0.5)
     .leftAlign()
@@ -78,7 +78,7 @@ function render(ctx, state, pids) {
         Text.create("Destination")
         .text("No Train Services at this Platform")
         .scale(0.7)
-        .size(pids.width / 0.7, 7)
+        .size(pids.width / 0.7, 10)
         .stretchXY()
         .color(0xFF0000)
         .leftAlign()
@@ -123,7 +123,7 @@ function render(ctx, state, pids) {
                 Text.create("Destination")
                 .text(TextUtil.cycleString(destination))
                 .scale(0.7)
-                .size(pids.width / 0.7 - 30, 7)
+                .size(pids.width / 0.7 - 40, 10)
                 .stretchXY()
                 .bold()
                 .color(0xFFFFFF)
@@ -134,7 +134,7 @@ function render(ctx, state, pids) {
                 Text.create("Destination")
                 .text(TextUtil.cycleString(`請勿登機|DO NOT BOARD`))
                 .scale(0.7)
-                .size(pids.width / 0.7, 7)
+                .size(pids.width / 0.7, 10)
                 .stretchXY()
                 .bold()
                 .color(0xFFFFFF)
@@ -148,7 +148,7 @@ function render(ctx, state, pids) {
                 .draw(ctx);
             }
             
-            let arriveMin = Math.ceil((arrival.arrivalTime() - Date.now()) / (60000));
+            let arriveMin = Math.round((arrival.arrivalTime()-Date.now()-12000)/60000);
             
             let eta;
 

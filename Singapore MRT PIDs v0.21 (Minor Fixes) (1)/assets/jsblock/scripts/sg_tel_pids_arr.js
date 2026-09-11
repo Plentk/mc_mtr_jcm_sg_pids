@@ -107,7 +107,7 @@ function render(ctx, state, pids) {
         }
 
         let firstTextColour = "0xFFFFFF";
-        if (Math.ceil((first_arrival.arrivalTime() - Date.now()) / 60000) <= 0) {
+        if (Math.round((first_arrival.arrivalTime()-Date.now()-12000)/60000) <= 0) {
             firstTextColour = TextUtil.cycleString("0xFFFFFF|0xFFFF00", 20);
         }
         Text.create("Destination Text")
@@ -185,7 +185,7 @@ function render(ctx, state, pids) {
             .bold()
             .draw(ctx);
 
-            let secondArrivalTime = Math.ceil((second_arrival.arrivalTime() - Date.now()) / 60000);
+            let secondArrivalTime = Math.round((second_arrival.arrivalTime()-Date.now()-12000)/60000);
             
             if(secondArrivalTime <= 0){
                 secondArrivalTime = TextUtil.cycleString(`|Arr`);

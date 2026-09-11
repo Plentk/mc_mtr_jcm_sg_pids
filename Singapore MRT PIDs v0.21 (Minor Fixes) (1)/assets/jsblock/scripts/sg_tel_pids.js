@@ -16,7 +16,7 @@ function render(ctx, state, pids) {
     if (hasPlatform) {
         let first_arrival = pids_arrivals.get(0);
         if (first_arrival != null) {
-            if (Math.ceil((first_arrival.arrivalTime() - Date.now()) / 60000) <= 0) {
+            if (Math.round((first_arrival.arrivalTime()-Date.now()-12000)/60000) <= 0) {
                 Texture.create("Background")
                 .texture("jsblock:textures/block/pids/pids_tel_arr_2019.png")
                 .size(pids.width, pids.height)
@@ -70,7 +70,7 @@ function render(ctx, state, pids) {
                 .text(TextUtil.cycleString(first_destination))
                 .color(firstTextColour)
                 .scale(1.2)
-                .size(pids.width / 1.2, 12)
+                .size(pids.width / 1.2, 10)
                 .stretchXY()
                 .pos(CENTREX, 50)
                 .centerAlign()
@@ -118,7 +118,7 @@ function render(ctx, state, pids) {
                         .text(TextUtil.cycleString(second_destination))
                         .color(0xFFFFFF)
                         .pos(32.7, pids.height - 7.5)
-                        .size(pids.width / 0.75 - 67, 7.5)
+                        .size(pids.width / 0.75 - 67, 10)
                         .stretchXY()
                         .scale(0.75)
                         .leftAlign()
@@ -136,7 +136,7 @@ function render(ctx, state, pids) {
                     .bold()
                     .draw(ctx);
 
-                    let secondArrivalTime = Math.ceil((second_arrival.arrivalTime() - Date.now()) / 60000);
+                    let secondArrivalTime = Math.round((second_arrival.arrivalTime()-Date.now()-12000)/60000);
                     
                     if(secondArrivalTime <= 0){
                         secondArrivalTime = TextUtil.cycleString(`|Arr`);
@@ -209,7 +209,7 @@ function render(ctx, state, pids) {
                             Text.create("Destination")
                             .text(TextUtil.cycleString(destination))
                             .scale(0.7)
-                            .size(pids.width / 0.7 - 30, 7)
+                            .size(pids.width / 0.7 - 40, 10)
                             .stretchXY()
                             .bold()
                             .color(0xFFFFFF)
@@ -220,7 +220,7 @@ function render(ctx, state, pids) {
                             Text.create("Destination")
                             .text(TextUtil.cycleString(`請勿登車|DO NOT BOARD`))
                             .scale(0.7)
-                            .size(pids.width / 0.7, 7)
+                            .size(pids.width / 0.7, 10)
                             .stretchXY()
                             .bold()
                             .color(0xFFFFFF)
@@ -234,7 +234,7 @@ function render(ctx, state, pids) {
                             .draw(ctx);
                         }
                         
-                        let arriveMin = Math.ceil((arrival.arrivalTime() - Date.now()) / (60000));
+                        let arriveMin = Math.round((arrival.arrivalTime()-Date.now()-12000)/60000);
                         
                         let eta;
 
@@ -279,7 +279,7 @@ function render(ctx, state, pids) {
             .text(TextUtil.cycleString(`封閉月台|Platform Closed`))
             .color(0xFFFFFF)
             .pos(CENTREX, 50)
-            .size(pids.width / 1.2, 12)
+            .size(pids.width / 1.2, 10)
             .stretchXY()
             .centerAlign()
             .scale(1.2)
@@ -300,7 +300,7 @@ function render(ctx, state, pids) {
         .color(0xFFFFFF)
         .pos(CENTREX, 50)
         .centerAlign()
-        .size(pids.width / 1.2, 12)
+        .size(pids.width / 1.2, 10)
         .stretchXY()
         .scale(1.2)
         .draw(ctx);
@@ -323,7 +323,7 @@ function render(ctx, state, pids) {
     .text(TextUtil.cycleString(customMsg))
     .color(0xFFFFFF)
     .pos(30, 3.5)
-    .size((2 * pids.width) - 100, 7.5)
+    .size((2 * pids.width) - 100, 10)
     .marquee()
     .scale(0.5)
     .leftAlign()

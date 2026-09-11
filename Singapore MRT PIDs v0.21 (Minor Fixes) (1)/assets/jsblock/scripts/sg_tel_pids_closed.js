@@ -2,7 +2,7 @@ include(Resources.id("jsblock:scripts/pids_util.js")); // Built-in script shippe
 const HEADER_HEIGHT = 13;
 
 function create(ctx, state, pids) {
-    print("SG TEL 2019 PID Initialising");  // Only for testing, can remove
+    print("SG TEL 2019 PID Initialising");
 }
 
 function render(ctx, state, pids) {
@@ -64,5 +64,5 @@ function render(ctx, state, pids) {
 }
 
 function dispose(ctx, state, pids) {
-    print("SG TEL 2019 PIDs Denitionalising......"); // Only for testing, can remove
+    print("SG TEL 2019 PIDs Denitionalising......");
 }
